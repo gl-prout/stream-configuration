@@ -11,7 +11,7 @@
         "mixers": 255,
         "sync": 0,
         "flags": 0,
-        "volume": 1.0,
+        "volume": 0.33583158254623413,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -37,7 +37,7 @@
         "id": "wasapi_input_capture",
         "versioned_id": "wasapi_input_capture",
         "settings": {
-            "device_id": "{0.0.1.00000000}.{6ffa55f0-8f6b-4c7d-95b1-f876e4b9affb}"
+            "device_id": "default"
         },
         "mixers": 255,
         "sync": 0,
@@ -59,10 +59,172 @@
         "deinterlace_mode": 0,
         "deinterlace_field_order": 0,
         "monitoring_type": 0,
-        "private_settings": {}
+        "private_settings": {},
+        "filters": [
+            {
+                "prev_ver": 520093700,
+                "name": "Suppression du bruit",
+                "uuid": "e71035a9-8adc-43c1-ada7-15bbda71a43d",
+                "id": "noise_suppress_filter",
+                "versioned_id": "noise_suppress_filter_v2",
+                "settings": {},
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 520093700,
+                "name": "Gain",
+                "uuid": "1a3941f3-38cc-4cec-a071-75d6331e9df3",
+                "id": "gain_filter",
+                "versioned_id": "gain_filter",
+                "settings": {
+                    "db": 12.0
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 520093700,
+                "name": "Égaliseur 3 bandes",
+                "uuid": "5fb916c9-7648-4d18-98a6-c91e43e3498a",
+                "id": "basic_eq_filter",
+                "versioned_id": "basic_eq_filter",
+                "settings": {
+                    "low": 3.0,
+                    "high": 1.0,
+                    "mid": -3.0
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 520093700,
+                "name": "Expandeur",
+                "uuid": "ab0203be-6924-48fe-b0fa-c22af513cb8a",
+                "id": "expander_filter",
+                "versioned_id": "expander_filter",
+                "settings": {
+                    "threshold": -27.0,
+                    "output_gain": 12.0
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 520093700,
+                "name": "Compresseur",
+                "uuid": "04cbf6de-1eab-46f4-a063-71fc96044c06",
+                "id": "compressor_filter",
+                "versioned_id": "compressor_filter",
+                "settings": {
+                    "ratio": 3.0,
+                    "release_time": 100,
+                    "attack_time": 2,
+                    "threshold": -24.0
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            },
+            {
+                "prev_ver": 520093700,
+                "name": "Limiteur",
+                "uuid": "bb5dbf1d-1391-4e0b-bf80-64e345ef5c90",
+                "id": "limiter_filter",
+                "versioned_id": "limiter_filter",
+                "settings": {
+                    "threshold": -0.10000000000000001
+                },
+                "mixers": 255,
+                "sync": 0,
+                "flags": 0,
+                "volume": 1.0,
+                "balance": 0.5,
+                "enabled": true,
+                "muted": false,
+                "push-to-mute": false,
+                "push-to-mute-delay": 0,
+                "push-to-talk": false,
+                "push-to-talk-delay": 0,
+                "hotkeys": {},
+                "deinterlace_mode": 0,
+                "deinterlace_field_order": 0,
+                "monitoring_type": 0,
+                "private_settings": {}
+            }
+        ]
     },
-    "current_scene": "ENDING",
-    "current_program_scene": "ENDING",
+    "current_scene": "STARTING",
+    "current_program_scene": "STARTING",
     "scene_order": [
         {
             "name": "STARTING"
@@ -105,9 +267,18 @@
             "fade_to_black": true
         }
     ],
-    "transitions": [],
+    "transitions": [
+        {
+            "name": "Stinger",
+            "id": "obs_stinger_transition",
+            "settings": {
+                "path": "C:/Users/Prout/Videos/stingers/prout-zzz-stinger.webm",
+                "track_matte_enabled": true
+            }
+        }
+    ],
     "saved_projectors": [],
-    "current_transition": "Fondu",
+    "current_transition": "Stinger",
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
